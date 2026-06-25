@@ -1,11 +1,12 @@
 import { getAllArticles } from '@/lib/articles'
 import Link from 'next/link'
+import ArticleCard from '@/components/ArticleCard'
 
 const CATEGORIES = [
-  { key: 'agent', label: '転職エージェント', emoji: '🏢', desc: 'おすすめエージェントを比較' },
-  { key: 'resume', label: '職務経歴書', emoji: '📝', desc: '書類選考を突破する書き方' },
-  { key: 'interview', label: '面接対策', emoji: '🎤', desc: '頻出質問と回答例' },
-  { key: 'career', label: 'キャリア', emoji: '🚀', desc: 'キャリアプランの考え方' },
+  { key: 'agent', label: '転職エージェント', icon: '🏢', desc: 'おすすめエージェントを比較', color: 'from-blue-500 to-indigo-600' },
+  { key: 'resume', label: '職務経歴書', icon: '📝', desc: '書類選考を突破する書き方', color: 'from-emerald-500 to-teal-600' },
+  { key: 'interview', label: '面接対策', icon: '🎤', desc: '頻出質問と回答例', color: 'from-orange-500 to-red-500' },
+  { key: 'career', label: 'キャリア', icon: '🚀', desc: 'キャリアプランの考え方', color: 'from-purple-500 to-pink-500' },
 ]
 
 export default function Home() {
@@ -31,10 +32,12 @@ export default function Home() {
             <Link
               key={cat.key}
               href={`/category/${cat.key}`}
-              className="bg-white rounded-xl border border-gray-200 p-4 hover:shadow-lg hover:-translate-y-0.5 transition-all text-center"
+              className="bg-white rounded-xl border border-gray-200 p-5 hover:shadow-lg hover:-translate-y-0.5 transition-all text-center group"
             >
-              <span className="text-2xl">{cat.emoji}</span>
-              <h3 className="font-bold text-sm text-gray-900 mt-2">{cat.label}</h3>
+              <div className={`bg-gradient-to-br ${cat.color} w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-3`}>
+                <span className="text-xl">{cat.icon}</span>
+              </div>
+              <h3 className="font-bold text-sm text-gray-900 group-hover:text-blue-700 transition-colors">{cat.label}</h3>
               <p className="text-xs text-gray-400 mt-1">{cat.desc}</p>
             </Link>
           ))}
@@ -48,24 +51,7 @@ export default function Home() {
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {articles.map((article) => (
-            <Link
-              key={article.slug}
-              href={`/article/${article.slug}`}
-              className="group bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg hover:-translate-y-0.5 transition-all"
-            >
-              <div className="bg-gradient-to-r from-blue-50 to-indigo-50 h-32 flex items-center justify-center">
-                <span className="text-4xl opacity-30">📄</span>
-              </div>
-              <div className="p-5">
-                <span className="inline-block text-xs bg-blue-100 text-blue-700 font-medium px-2.5 py-0.5 rounded-full mb-3">
-                  {article.categoryLabel}
-                </span>
-                <h3 className="font-bold text-gray-900 text-sm leading-relaxed mb-3 line-clamp-3 group-hover:text-blue-700 transition-colors">
-                  {article.title}
-                </h3>
-                <p className="text-xs text-gray-400">{article.date}</p>
-              </div>
-            </Link>
+            <ArticleCard key={article.slug} article={article} />
           ))}
         </div>
       </section>

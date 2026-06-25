@@ -1,6 +1,7 @@
 import { getArticlesByCategory, getCategoryLabel } from '@/lib/articles'
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import ArticleCard from '@/components/ArticleCard'
 
 type Props = { params: Promise<{ category: string }> }
 
@@ -33,21 +34,7 @@ export default async function CategoryPage({ params }: Props) {
       ) : (
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {articles.map((article) => (
-            <Link
-              key={article.slug}
-              href={`/article/${article.slug}`}
-              className="group bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg hover:-translate-y-0.5 transition-all"
-            >
-              <div className="bg-gradient-to-r from-blue-50 to-indigo-50 h-28 flex items-center justify-center">
-                <span className="text-3xl opacity-30">📄</span>
-              </div>
-              <div className="p-5">
-                <h3 className="font-bold text-gray-900 text-sm leading-relaxed mb-3 line-clamp-3 group-hover:text-blue-700 transition-colors">
-                  {article.title}
-                </h3>
-                <p className="text-xs text-gray-400">{article.date}</p>
-              </div>
-            </Link>
+            <ArticleCard key={article.slug} article={article} />
           ))}
         </div>
       )}
