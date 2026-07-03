@@ -9,6 +9,13 @@ const SITE = {
   url: 'https://tensyoku-media.vercel.app',
 };
 
+const AFFILIATE_TOP = `
+<div style="background:#fff7ed;border:2px solid #ea580c;border-radius:8px;padding:16px;margin:24px 0;">
+  <p style="font-weight:bold;color:#c2410c;margin:0 0 8px;">【PR】あなたにぴったりの転職エージェントを無料でマッチング</p>
+  <a href="https://px.a8.net/svt/ejp?a8mat=4B7QWT+A2L06Q+5BJK+5YJRM" rel="nofollow" style="display:inline-block;background:#ea580c;color:#fff;padding:10px 20px;border-radius:6px;text-decoration:none;font-weight:bold;">完全無料で転職のプロをパーソナルマッチング【転職AGENT Navi】</a>
+  <img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4B7QWT+A2L06Q+5BJK+5YJRM" alt="">
+</div>`;
+
 async function generateArticle() {
   const topicsPath = path.join(__dirname, '..', 'unused-topics.json');
   const contentDir = path.join(__dirname, '..', 'content');
@@ -61,6 +68,13 @@ contentの要件:
   if (!jsonMatch) throw new Error('レスポンスにJSONが見つかりません');
 
   const article = JSON.parse(jsonMatch[0]);
+
+  // アフィリエイトリンクを挿入
+  if (article.content.includes('<h2')) {
+    article.content = article.content.replace('<h2', AFFILIATE_TOP + '<h2');
+  } else {
+    article.content = AFFILIATE_TOP + article.content;
+  }
 
   fs.writeFileSync(
     path.join(contentDir, topic.filename),
