@@ -33,8 +33,9 @@ async function postTweet() {
   const text = tweets[index];
   console.log(`Day ${index + 1} を投稿します（${text.length}文字）`);
 
-  await client.v2.tweet(text);
-  console.log('投稿完了');
+  const rwClient = client.readWrite;
+  const result = await rwClient.v2.tweet(text);
+  console.log('投稿完了:', JSON.stringify(result));
 
   fs.writeFileSync(
     progressPath,
@@ -43,6 +44,7 @@ async function postTweet() {
 }
 
 postTweet().catch(err => {
-  console.error('エラー:', err.message);
+  console.error('エラーコード:', err.code);
+  console.error('エラー詳細:', JSON.stringify(err.data || err.message));
   process.exit(1);
 });
