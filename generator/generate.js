@@ -10,6 +10,12 @@ const SITE = {
 };
 
 const AFFILIATE_TOP = `
+<div style="background:#1e1b4b;border:2px solid #4f46e5;border-radius:8px;padding:20px;margin:24px 0;">
+  <p style="font-weight:bold;color:#a5b4fc;margin:0 0 4px;font-size:12px;">【PR】ITエンジニア・ハイクラス転職</p>
+  <p style="font-weight:bold;color:#fff;margin:0 0 12px;font-size:18px;">年収UP転職ならTechGO（テックゴー）</p>
+  <a href="https://px.a8.net/svt/ejp?a8mat=4B648M+5KN3N6+5B0Y+HV7V6" rel="nofollow" style="display:inline-block;background:#4f46e5;color:#fff;padding:12px 24px;border-radius:6px;text-decoration:none;font-weight:bold;font-size:16px;">▶ ITエンジニアの転職なら【TechGO】無料登録</a>
+  <img border="0" width="1" height="1" src="https://www18.a8.net/0.gif?a8mat=4B648M+5KN3N6+5B0Y+HV7V6" alt="">
+</div>
 <div style="background:#fff7ed;border:2px solid #ea580c;border-radius:8px;padding:16px;margin:24px 0;">
   <p style="font-weight:bold;color:#c2410c;margin:0 0 8px;">【PR】あなたにぴったりの転職エージェントを無料でマッチング</p>
   <a href="https://px.a8.net/svt/ejp?a8mat=4B7QWT+A2L06Q+5BJK+5YJRM" rel="nofollow" style="display:inline-block;background:#ea580c;color:#fff;padding:10px 20px;border-radius:6px;text-decoration:none;font-weight:bold;">完全無料で転職のプロをパーソナルマッチング【転職AGENT Navi】</a>
@@ -81,7 +87,8 @@ contentの要件:
   });
 
   const text = message.content[0].text.trim();
-  const jsonMatch = text.match(/\{[\s\S]*\}/);
+  const cleaned = text.replace(/```json\s*/g, '').replace(/```\s*/g, '');
+  const jsonMatch = cleaned.match(/\{[\s\S]*\}/);
   if (!jsonMatch) throw new Error('レスポンスにJSONが見つかりません');
 
   const article = JSON.parse(jsonMatch[0]);
