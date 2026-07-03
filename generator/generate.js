@@ -16,6 +16,23 @@ const AFFILIATE_TOP = `
   <img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4B7QWT+A2L06Q+5BJK+5YJRM" alt="">
 </div>`;
 
+const AFFILIATE_BOTTOM = `
+<div style="background:#fffbeb;border:2px solid #d97706;border-radius:8px;padding:16px;margin:24px 0;">
+  <p style="font-weight:bold;color:#92400e;margin:0 0 12px;">📚 転職成功者が読んだおすすめ本</p>
+  <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;">
+    <li><a href="https://www.amazon.co.jp/dp/4839990972?linkCode=ll2&tag=mirainikibouw-22&linkId=01224d59701a0621c0fb752ee3419268&ref_=as_li_ss_tl" rel="nofollow" target="_blank" style="color:#1d4ed8;text-decoration:underline;">▶ 採用獲得のメソッド はじめての転職ガイド【Amazon】</a></li>
+    <li><a href="https://www.amazon.co.jp/dp/4046076690?linkCode=ll2&tag=mirainikibouw-22&linkId=a872303777fd021430fc5401bfd9e936&ref_=as_li_ss_tl" rel="nofollow" target="_blank" style="color:#1d4ed8;text-decoration:underline;">▶ 人生が圧倒的に豊かになるキャリア戦略【Amazon】</a></li>
+    <li><a href="https://www.amazon.co.jp/dp/4594098215?linkCode=ll2&tag=mirainikibouw-22&linkId=4a11ca89cbe597ac2cc0b0e1d1192f88&ref_=as_li_ss_tl" rel="nofollow" target="_blank" style="color:#1d4ed8;text-decoration:underline;">▶ 転職する勇気 「強み」がない人のための転職活動攻略マニュアル【Amazon】</a></li>
+  </ul>
+</div>
+<div style="background:#fff0f0;border:2px solid #e00;border-radius:8px;padding:16px;margin:24px 0;">
+  <p style="font-weight:bold;color:#c00;margin:0 0 12px;">🛒 楽天で人気の転職関連本</p>
+  <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;">
+    <li><a href="https://hb.afl.rakuten.co.jp/ichiba/5570f8cd.82e98484.5570f8ce.5b744630/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18268475%2F&link_type=text&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJ0ZXh0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9" target="_blank" rel="nofollow sponsored noopener" style="color:#c00;text-decoration:underline;">▶ 退職・転職前後にやっておくべき「お金」のチェックノート【楽天ブックス】</a></li>
+    <li><a href="https://hb.afl.rakuten.co.jp/ichiba/5570f8cd.82e98484.5570f8ce.5b744630/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F16301757%2F&link_type=text&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJ0ZXh0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9" target="_blank" rel="nofollow sponsored noopener" style="color:#c00;text-decoration:underline;">▶ 成功する転職面接 成否の9割は「準備」の質で決まる【楽天ブックス】</a></li>
+  </ul>
+</div>`;
+
 async function generateArticle() {
   const topicsPath = path.join(__dirname, '..', 'unused-topics.json');
   const contentDir = path.join(__dirname, '..', 'content');
@@ -69,12 +86,12 @@ contentの要件:
 
   const article = JSON.parse(jsonMatch[0]);
 
-  // アフィリエイトリンクを挿入
   if (article.content.includes('<h2')) {
     article.content = article.content.replace('<h2', AFFILIATE_TOP + '<h2');
   } else {
     article.content = AFFILIATE_TOP + article.content;
   }
+  article.content = article.content + AFFILIATE_BOTTOM;
 
   fs.writeFileSync(
     path.join(contentDir, topic.filename),
