@@ -17,9 +17,11 @@ const AFFILIATE_TOP = `
   <img border="0" width="1" height="1" src="https://www18.a8.net/0.gif?a8mat=4B648M+5KN3N6+5B0Y+HV7V6" alt="">
 </div>
 <div style="background:#fff7ed;border:2px solid #ea580c;border-radius:8px;padding:16px;margin:24px 0;">
-  <p style="font-weight:bold;color:#c2410c;margin:0 0 8px;">【PR】あなたにぴったりの転職エージェントを無料でマッチング</p>
-  <a href="https://px.a8.net/svt/ejp?a8mat=4B7QWT+A2L06Q+5BJK+5YJRM" rel="nofollow" style="display:inline-block;background:#ea580c;color:#fff;padding:10px 20px;border-radius:6px;text-decoration:none;font-weight:bold;">完全無料で転職のプロをパーソナルマッチング【転職AGENT Navi】</a>
-  <img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4B7QWT+A2L06Q+5BJK+5YJRM" alt="">
+  <p style="font-weight:bold;color:#c2410c;margin:0 0 8px;">【PR】転職エージェントを無料でマッチング</p>
+  <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;">
+    <li><a href="https://px.a8.net/svt/ejp?a8mat=4B7QWT+A2L06Q+5BJK+5YJRM" rel="nofollow" style="display:inline-block;background:#ea580c;color:#fff;padding:10px 20px;border-radius:6px;text-decoration:none;font-weight:bold;">▶ 完全無料でパーソナルマッチング【転職AGENT Navi】</a><img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=4B7QWT+A2L06Q+5BJK+5YJRM" alt=""></li>
+    <li><a href="https://px.a8.net/svt/ejp?a8mat=4B7QWT+A2L06Q+5BJK+5YRHE" rel="nofollow" style="display:inline-block;background:#c2410c;color:#fff;padding:10px 20px;border-radius:6px;text-decoration:none;font-weight:bold;">▶ 転職サポートのプロに出会える【転職エージェントナビ】</a><img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=4B7QWT+A2L06Q+5BJK+5YRHE" alt=""></li>
+  </ul>
 </div>`;
 
 const AFFILIATE_BOTTOM = `
