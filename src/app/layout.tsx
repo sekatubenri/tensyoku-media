@@ -3,6 +3,7 @@ import Script from 'next/script'
 import './globals.css'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://tensyoku-select.com'),
   title: {
     default: '転職プラス｜20代30代の転職成功ガイド',
     template: '%s｜転職プラス',

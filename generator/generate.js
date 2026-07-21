@@ -6,7 +6,7 @@ const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
 const SITE = {
   name: '転職プラス',
-  url: 'https://tensyoku-media.vercel.app',
+  url: 'https://tensyoku-select.com',
 };
 
 const AFFILIATE_TOP = `

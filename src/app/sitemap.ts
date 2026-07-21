@@ -1,7 +1,7 @@
 import { getAllArticles } from '@/lib/articles'
 import type { MetadataRoute } from 'next'
 
-const BASE_URL = 'https://tensyoku-media.vercel.app'
+const BASE_URL = 'https://tensyoku-select.com'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const articles = getAllArticles()
