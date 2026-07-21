@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     siteName: '転職プラス',
   },
   verification: {
-    google: 'XcyMImXtiMlMj5NBeiKQBcD_Vqrw3EDW0TDFBVTAtaA',
+    google: 'BN-zB0M32odPOCOSMDpF_0TAfmdHRTNT4bM5G61YNqY',
   },
 }
 
