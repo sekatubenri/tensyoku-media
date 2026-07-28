@@ -88,19 +88,19 @@ SEOに最適化された転職情報記事を生成してください。
 }
 
 contentの要件:
-- 2500文字以上のHTML本文
-- h2見出しを5〜8個、必要に応じてh3も使用
-- ul/ol/liリスト、tableを積極的に活用
+- 1500文字程度のHTML本文（簡潔にまとめること）
+- h2見出しを3〜5個
+- ul/liリスト、tableを活用
 - 具体的な数字・年収・成功率などを含める
-- 読者の疑問に答える実践的な内容
-- JSON文字列として正しくエスケープ（"は\\"、改行は\\n）`;
+- JSON文字列として正しくエスケープ（"は\\"、改行は\\n）
+- 必ずJSON全体を完結させること（途中で切れないこと）`;
 
   let article = null;
   for (let attempt = 1; attempt <= 3; attempt++) {
     try {
       const message = await client.messages.create({
         model: 'claude-haiku-4-5-20251001',
-        max_tokens: 4000,
+        max_tokens: 6000,
         messages: [{ role: 'user', content: prompt }],
       });
       const text = message.content[0].text.trim();

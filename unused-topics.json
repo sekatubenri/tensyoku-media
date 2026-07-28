@@ -1,5 +1,125 @@
 [
   {
+    "filename": "tenshoku-automobile.json",
+    "title": "自動車業界への転職ガイド",
+    "category": "career"
+  },
+  {
+    "filename": "tenshoku-food.json",
+    "title": "食品・飲料業界への転職ガイド",
+    "category": "career"
+  },
+  {
+    "filename": "tenshoku-realestate.json",
+    "title": "不動産業界への転職ガイド",
+    "category": "career"
+  },
+  {
+    "filename": "tenshoku-tourism.json",
+    "title": "観光・ホテル業界への転職ガイド",
+    "category": "career"
+  },
+  {
+    "filename": "tenshoku-retail.json",
+    "title": "小売・流通業界への転職ガイド",
+    "category": "career"
+  },
+  {
+    "filename": "tenshoku-energy.json",
+    "title": "エネルギー業界への転職ガイド",
+    "category": "career"
+  },
+  {
+    "filename": "tenshoku-game.json",
+    "title": "ゲーム業界への転職ガイド",
+    "category": "career"
+  },
+  {
+    "filename": "tenshoku-beauty.json",
+    "title": "美容・エステ業界への転職ガイド",
+    "category": "career"
+  },
+  {
+    "filename": "tenshoku-sports.json",
+    "title": "スポーツ業界への転職ガイド",
+    "category": "career"
+  },
+  {
+    "filename": "tenshoku-pharma.json",
+    "title": "製薬・バイオ業界への転職ガイド",
+    "category": "career"
+  },
+  {
+    "filename": "tenshoku-insurance.json",
+    "title": "保険業界への転職ガイド",
+    "category": "career"
+  },
+  {
+    "filename": "tenshoku-aviation.json",
+    "title": "航空業界への転職ガイド",
+    "category": "career"
+  },
+  {
+    "filename": "tenshoku-railway.json",
+    "title": "鉄道・交通業界への転職ガイド",
+    "category": "career"
+  },
+  {
+    "filename": "tenshoku-restaurant.json",
+    "title": "外食・飲食業界への転職ガイド",
+    "category": "career"
+  },
+  {
+    "filename": "tenshoku-environment.json",
+    "title": "環境・SDGs分野への転職ガイド",
+    "category": "career"
+  },
+  {
+    "filename": "tenshoku-overseas.json",
+    "title": "海外転職・グローバルキャリアガイド",
+    "category": "career"
+  },
+  {
+    "filename": "tenshoku-freelance.json",
+    "title": "フリーランス転向完全ガイド",
+    "category": "career"
+  },
+  {
+    "filename": "tenshoku-independent.json",
+    "title": "起業・独立への転職戦略ガイド",
+    "category": "career"
+  },
+  {
+    "filename": "tenshoku-public-servant.json",
+    "title": "公務員からの転職完全ガイド",
+    "category": "career"
+  },
+  {
+    "filename": "tenshoku-teacher.json",
+    "title": "教員・教師からの転職完全ガイド",
+    "category": "career"
+  },
+  {
+    "filename": "tenshoku-pharmacist.json",
+    "title": "薬剤師の転職完全ガイド",
+    "category": "career"
+  },
+  {
+    "filename": "tenshoku-pt-ot.json",
+    "title": "理学療法士・作業療法士の転職ガイド",
+    "category": "career"
+  },
+  {
+    "filename": "tenshoku-50s.json",
+    "title": "50代の転職完全ガイド｜成功する戦略と注意点",
+    "category": "career"
+  },
+  {
+    "filename": "tenshoku-60s.json",
+    "title": "60代の転職・再就職完全ガイド",
+    "category": "career"
+  },
+  {
     "filename": "tenshoku-logistics.json",
     "title": "物流・運輸業界への転職ガイド",
     "category": "career"
