@@ -1,17 +1,116 @@
 [
   {
-    "filename": "tenshoku-logistics.json",
-    "title": "物流・運輸業界への転職ガイド",
-    "category": "career"
+    "filename": "job-site-ranking.json",
+    "title": "転職サイトおすすめ比較ランキング｜求人数・使いやすさ・スカウト機能で厳選",
+    "category": "agent",
+    "keyword": "転職サイト おすすめ"
   },
   {
-    "filename": "tenshoku-startup.json",
-    "title": "スタートアップへの転職完全ガイド",
-    "category": "career"
+    "filename": "reasons-ranking-30s.json",
+    "title": "30代の転職理由ランキング｜本音の退職理由と面接での伝え方のポイント",
+    "category": "career",
+    "keyword": "転職 理由 ランキング 30代"
   },
   {
-    "filename": "tenshoku-salary-negotiation.json",
-    "title": "転職の年収交渉を成功させる完全ガイド",
-    "category": "career"
+    "filename": "30s-women-recommended-jobs.json",
+    "title": "30代女性の転職におすすめの職種12選｜未経験OK・長く働ける仕事の選び方",
+    "category": "career",
+    "keyword": "30代 女性 転職 おすすめ職種"
+  },
+  {
+    "filename": "boring-job-30s.json",
+    "title": "仕事がつまらない30代は転職すべき？原因の見極め方と後悔しない判断基準",
+    "category": "career",
+    "keyword": "仕事 つまらない 30代 転職"
+  },
+  {
+    "filename": "30s-men-no-skills.json",
+    "title": "スキルなしの30代男性が転職を成功させる方法｜狙い目の職種と進め方",
+    "category": "career",
+    "keyword": "転職 30代 男性 スキルなし"
+  },
+  {
+    "filename": "interview-difficult-people.json",
+    "title": "面接で「苦手な人との接し方」を聞かれたら？好印象な答え方と回答例文",
+    "category": "interview",
+    "keyword": "面接 質問 苦手な人 接し方 答え方"
+  },
+  {
+    "filename": "interview-inappropriate-questions.json",
+    "title": "面接で聞いてはいけない質問とは？不適切な質問をされた時の対処法も解説",
+    "category": "interview",
+    "keyword": "面接 聞いては いけない 質問"
+  },
+  {
+    "filename": "agent-uninteresting-jobs.json",
+    "title": "転職エージェントの紹介求人に興味がない時の対処法｜希望に合う求人を引き出すコツ",
+    "category": "agent",
+    "keyword": "転職エージェント 求人 興味 ない"
+  },
+  {
+    "filename": "agent-vs-direct-application.json",
+    "title": "転職エージェントと直接応募はどっちが有利？メリット比較と賢い使い分け方",
+    "category": "agent",
+    "keyword": "転職 エージェント 直接応募 使い分け"
+  },
+  {
+    "filename": "agent-interview-result.json",
+    "title": "転職エージェント経由の面接結果はいつ来る？連絡が遅い理由と確認方法",
+    "category": "agent",
+    "keyword": "転職 面接 結果 エージェント"
+  },
+  {
+    "filename": "resume-many-jobs-office.json",
+    "title": "職歴が多い人の職務経歴書の書き方｜事務職の見本とまとめ方のコツを解説",
+    "category": "resume",
+    "keyword": "職務経歴書 書き方 事務 職歴多い"
+  },
+  {
+    "filename": "resignation-agency-ranking.json",
+    "title": "退職代行おすすめ比較ランキング｜弁護士・労働組合・民間の選び方を解説",
+    "category": "career",
+    "keyword": "退職代行 おすすめ"
+  },
+  {
+    "filename": "resignation-agency-cost.json",
+    "title": "退職代行の費用相場はいくら？弁護士・労働組合・民間の料金比較と注意点",
+    "category": "career",
+    "keyword": "退職代行 費用"
+  },
+  {
+    "filename": "resignation-agency-demerits.json",
+    "title": "退職代行のデメリットと注意点｜再就職への影響やトラブルを避ける方法",
+    "category": "career",
+    "keyword": "退職代行 デメリット"
+  },
+  {
+    "filename": "agent-decline-job-examples.json",
+    "title": "転職エージェントからの求人の断り方｜角が立たないメール例文とマナー",
+    "category": "agent",
+    "keyword": "転職エージェント 求人 断り方 例文"
+  },
+  {
+    "filename": "agent-interview-questions-list.json",
+    "title": "転職エージェントの面談で聞かれること一覧｜事前準備と好印象を与える回答",
+    "category": "agent",
+    "keyword": "転職エージェント 面談 聞かれること 一覧"
+  },
+  {
+    "filename": "agent-demerits.json",
+    "title": "転職エージェントのデメリット7つ｜使わない方がいい人と失敗しない対策",
+    "category": "agent",
+    "keyword": "転職エージェント デメリット"
+  },
+  {
+    "filename": "rirekisho-vs-resume.json",
+    "title": "履歴書と職務経歴書の違いとは？役割・書く内容・提出時の注意点を解説",
+    "category": "resume",
+    "keyword": "履歴書 職務経歴書 違い"
+  },
+  {
+    "filename": "resume-self-pr-examples.json",
+    "title": "職務経歴書の自己PR例文集｜採用担当に響く書き方と強み別のテンプレート",
+    "category": "resume",
+    "keyword": "職務経歴書 自己pr 例文"
   }
 ]
